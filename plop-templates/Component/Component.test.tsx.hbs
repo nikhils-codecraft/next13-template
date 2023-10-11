@@ -1,0 +1,18 @@
+import {describe, test, expect, beforeEach} from 'vitest'
+import {render, screen} from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+
+import {{pascalCase name}} from '.'
+
+
+describe('{{pascalCase name}}', () => {
+    let {{name}} : HTMLElement
+    beforeEach(() => {
+        render(<{{pascalCase name}} />)
+        {{name}} = screen.getByTestId('{{name}}')
+    })
+
+    test('should render the {{pascalCase name}}', () => {
+        expect({{name}}).toBeInTheDocument()
+    })
+})
